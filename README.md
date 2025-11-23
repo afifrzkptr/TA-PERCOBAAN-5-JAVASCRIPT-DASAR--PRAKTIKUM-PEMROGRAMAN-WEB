@@ -2,6 +2,7 @@
 # Kalkulator
 
 Repositori ini berisi implementasi Tugas Akhir (TA) untuk Praktikum Pemrograman Web (Percobaan 5: JavaScript Dasar), yaitu membuat kalkulator interaktif dengan fitur-fitur lanjutan.
+<img width="1905" height="959" alt="image" src="https://github.com/user-attachments/assets/2e7cc180-04c7-41d3-885a-082d554a6ae8" />
 
 ## Fitur Utama
 
