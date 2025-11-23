@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <div id="calculator" class="calculator-main p-6 w-full max-w-sm rounded-3xl">
+
+        <div id="history-display" class="history-display-text text-right text-sm h-5 overflow-hidden mb-1"></div>
+
+        <div id="display" class="display-screen text-4xl p-4 rounded-xl mb-6 text-right overflow-x-auto whitespace-nowrap">0</div>
+
+        <div class="flex mb-4 space-x-3">
+            <button id="show-history" class="advanced-btn p-2 text-sm rounded-lg flex-1 transition duration-200">History</button>
+            <button id="show-memory" class="advanced-btn p-2 text-sm rounded-lg flex-1 transition duration-200">Memory (0)</button>
+        </div>
+
+        <div id="advanced-panel" class="mb-4 p-3 display-screen rounded-lg hidden max-h-40 overflow-y-auto text-gray-700">
+        </div>
+
+        <div class="grid grid-cols-4 gap-3 mb-4">
+            <button data-action="memory" data-value="M+" class="neumorphic-btn-small">M+</button>
+            <button data-action="memory" data-value="M-" class="neumorphic-btn-small">M-</button>
+            <button data-action="memory" data-value="MR" class="neumorphic-btn-small">MR</button>
+            <button data-action="memory" data-value="MC" class="neumorphic-btn-small text-red-500">MC</button>
+        </div>
+
+        <div id="buttons-grid" class="grid grid-cols-4 gap-3">
+            <button data-action="clear" data-value="C" class="neumorphic-btn btn-control-c">C</button>
+            <button data-action="clear" data-value="CE" class="neumorphic-btn btn-control-ce">CE</button>
+            <button data-action="operator" data-value="%" class="neumorphic-btn"> % </button>
+            <button data-action="operator" data-value="÷" class="neumorphic-btn btn-op-accent">÷</button>
+
+            <button data-action="number" data-value="7" class="neumorphic-btn">7</button>
+            <button data-action="number" data-value="8" class="neumorphic-btn">8</button>
+            <button data-action="number" data-value="9" class="neumorphic-btn">9</button>
+            <button data-action="operator" data-value="×" class="neumorphic-btn btn-op-accent">×</button>
+
+            <button data-action="number" data-value="4" class="neumorphic-btn">4</button>
+            <button data-action="number" data-value="5" class="neumorphic-btn">5</button>
+            <button data-action="number" data-value="6" class="neumorphic-btn">6</button>
+            <button data-action="operator" data-value="-" class="neumorphic-btn btn-op-accent">-</button>
+
+            <button data-action="number" data-value="1" class="neumorphic-btn">1</button>
+            <button data-action="number" data-value="2" class="neumorphic-btn">2</button>
+            <button data-action="number" data-value="3" class="neumorphic-btn">3</button>
+            <button data-action="operator" data-value="+" class="neumorphic-btn btn-op-accent">+</button>
+
+            <button data-action="number" data-value="0" class="neumorphic-btn col-span-2 btn-zero">0</button>
+            <button data-action="decimal" data-value="." class="neumorphic-btn">.</button>
+            <button data-action="equals" data-value="=" class="neumorphic-btn btn-equals-accent"> = </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
